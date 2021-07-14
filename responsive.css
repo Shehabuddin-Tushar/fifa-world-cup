@@ -162,6 +162,7 @@ this design for mobile device start
     padding: 0px;
    
     flex-direction: column;
+
    
    
     
@@ -201,6 +202,7 @@ this design for mobile device start
 .football-footer-banner .banner-title{
 
     width:320px;
+    margin-left: -35px;
    
    
    
