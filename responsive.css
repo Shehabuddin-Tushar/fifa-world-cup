@@ -1,0 +1,545 @@
+/*--------------------------------
+this design for mobile device start
+------------------------------------*/
+
+@media only screen and (max-width: 688px) {
+
+/*navbar start*/
+.navbar{
+    display: none;
+
+}
+.mobile-menubar{
+    display:block;
+    background-color: #2D25A0;
+   
+    width: 100%;
+    margin: 0px;
+    z-index: 1;
+    height: 70px;
+    
+ }
+.top-header{
+    display: flex;
+    justify-content:space-between;
+    padding:10px 50px;
+
+} 
+.top-header .login a{
+    background-color:#E02C6D ;
+    padding: 8px 19px;
+    text-decoration: none;
+    color:#fff;
+    position: relative;
+    top:10px;
+    transition: 1s;
+}
+.top-header .login a:hover{
+
+    background-color: blueviolet;
+}
+
+.top-header .login img{
+    position: relative;
+    top:3px;
+    width:17px;
+    height: 16px;
+}
+
+ #check:checked ~.sidebar-nav{
+    display:block;
+    position: absolute;
+    width: 100%;
+    left:0px;
+    top:80px;
+    z-index: 1;
+    background-color:#3DBAFd;
+ }
+ #check:not(:checked)~.sidebar-nav{
+        position:relative; 
+        left:-999px;
+        height: 0px;
+        margin-top: -100px;
+          
+   }
+
+
+#check{
+    display: none;
+}
+
+
+.sidebar a{
+    position: relative;
+    top:6px;
+    font-size: 24px;
+    cursor: pointer;
+    
+ }
+
+
+.sidebar-nav ul{
+ 
+  
+}
+
+.sidebar{
+    color:#fff;
+}
+
+.sidebar-nav ul li{
+
+  padding: 5px 10px;
+  list-style-type: none;
+  margin-left: -30px;
+    
+}
+
+.sidebar-nav ul li a{
+ 
+    text-decoration: none;
+    background-color: rgb(123, 86, 209);
+    display: block;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 25px;
+    color:#fff;
+    transition: 1s;
+    
+}
+
+.sidebar-nav ul li a:hover{
+ 
+   
+    background-color: rgb(92, 34, 230);
+   
+    color:#fff
+    
+}
+
+
+/*navbar end*/
+
+
+
+
+/*football banner start*/
+
+    .football-banner{
+        display: flex;
+        flex-direction: column;
+        width:360px;
+        justify-content:center;
+      
+       
+    
+    }
+    .football-banner .banner-title{
+    
+       margin: 50px 0px;
+       margin-left: -80px;
+    }
+    .football-banner .banner-image img{
+
+        width:329px;
+        height: 260px;
+     }
+
+    .football-banner .banner-title h2{
+         font-style: normal;
+         font-weight: bold;
+         font-size: 36px;
+         line-height: 50px;
+         margin-top: -30px;
+    }
+/*football banner end*/
+
+/*------------------------------
+     main section players start
+---------------------------------*/
+.container-players{
+    width: 360px;
+    padding: 0px;
+   
+    flex-direction: column;
+   
+   
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(1,330px);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    margin-left: 0px;
+    margin-bottom: 60px;
+  
+    
+    
+}
+/*main section players end*/
+
+/*------------------------
+   footer-banner start
+-------------------------*/
+.football-footer-banner{
+    display: flex;
+    flex-direction: column;
+    width:360px;
+    justify-content:center;
+    align-items: center;
+    
+    position: relative;
+    top:10px;
+    margin: 0px;
+    margin-bottom: 100px;
+    
+  
+
+}
+
+.football-footer-banner .banner-title{
+
+    width:320px;
+   
+   
+   
+     
+}
+
+.football-footer-banner .banner-title p {
+    
+    width:328px;
+   
+    
+
+}
+
+.football-footer-banner .banner-image img{
+
+    width:328px;
+    height: 248px;
+ }
+.football-footer-banner .banner-title h2{
+    
+    font-style: normal;
+    font-weight: 700; 
+    font-size: 30px;
+    color: #0A0826;
+    line-height: 40px;
+ }
+/*footer-banner end*/
+
+
+/*partner part start*/
+.partnars{
+    width:360px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+}
+
+/*partner part end*/
+
+/*footer part start*/
+
+.football-img img{
+    width: 300px;
+    height: 90px;
+}
+
+
+}
+
+
+
+
+
+/*this design for mobile device end*/
+
+
+
+
+
+
+/*--------------------------------
+this design for tablet device start
+------------------------------------*/
+
+
+@media (min-width: 689px) and (max-width: 992px) {
+
+
+    /*navbar start*/
+    .top-navbar{
+       width: 688px;
+    }
+
+    .top-navbar .nav ul li{
+        
+        padding-right: 3px;
+        padding-left: 0px;
+    
+    }
+
+    .top-navbar .nav ul li a{
+        
+        font-weight: 300;
+        font-size: 12px;
+        padding: 5px 8px;
+       
+       
+    }
+
+    .top-navbar .login a{
+        
+        padding: 7px 20px;
+        position: relative;
+        right:20px
+    }
+   /*navbar end*/
+
+   /*football banner start*/
+
+   .container{
+       height: 400px;
+   }
+   .football-banner{
+       width:680px;
+   }
+   .football-banner .banner-title h2{
+      font-size: 30px;
+      line-height: 50px;
+    }
+  .football-banner .banner-image img{
+
+    width:300px;
+    height: 250px;
+ }
+/*football banner end*/
+
+/*main section players start*/
+.container-players{
+
+    width: 670px;
+  }
+
+  .players{
+    display: grid;
+    grid-template-columns: repeat(2,290px);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-left: -20px;
+    
+    
+}
+
+.player .player-img img{
+    width:260px;
+    height: 206px;
+}
+
+/*main section players end*/
+
+/*footer-banner start*/
+
+.container-footer{
+
+ height: 400px;
+  
+
+}
+.football-footer-banner{
+    
+    width:670px;
+ }
+
+ .football-footer-banner .banner-title{
+    padding: 0px 20px;
+}
+
+.football-footer-banner .banner-image img{
+
+    width:200px;
+    height: 200px;
+    
+    
+}
+
+ .football-footer-banner .banner-title h2{
+    
+    font-size: 30px;
+     line-height: 40px;
+  
+ }
+
+/*footer-banner end*/
+
+/*partnar part start*/
+
+.partnars{
+    width:660px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    
+}
+
+/*partnar part end*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------
+this design for tablet device end
+------------------------------------*/
+
+
+
+
+
+/*--------------------------------
+this design for laptop device start
+------------------------------------*/
+
+@media (min-width: 993px) and (max-width: 1300px) {
+
+   
+
+    /*navbar start*/
+    .top-navbar{
+        width: 992px;
+     }
+ 
+     .top-navbar .nav ul li{
+         
+         padding-right: 3px;
+         padding-left: 0px;
+     
+     }
+ 
+     .top-navbar .nav ul li a{
+         
+         font-weight: 300;
+         font-size: 18px;
+         padding: 5px 8px;
+        
+        
+     }
+ 
+     .top-navbar .login a{
+         
+         padding: 7px 20px;
+         position: relative;
+         right:50px
+     }
+    /*navbar end*/
+
+
+/*football banner start*/
+
+    .container{
+        height: 400px;
+    }
+    .football-banner{
+        width:980px;
+    }
+    .football-banner .banner-title h2{
+    font-size: 40px;
+    line-height: 60px;
+    }
+    .football-banner .banner-image img{
+
+    width:400px;
+    height: 300px;
+    }
+/*football banner end*/
+
+/*main section players start*/
+.container-players{
+
+    width: 670px;
+  }
+
+  .players{
+    display: grid;
+    grid-template-columns: repeat(3,290px);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-left: -20px;
+    
+    
+}
+
+.player .player-img img{
+    width:260px;
+    height: 206px;
+}
+
+/*main section players end*/
+
+/*footer-banner start*/
+
+.container-footer{
+
+    height: 400px;
+     
+   
+   }
+   .football-footer-banner{
+       
+       width:950px;
+    }
+   
+    .football-footer-banner .banner-title{
+       padding: 0px 20px;
+   }
+   
+   .football-footer-banner .banner-image img{
+   
+       width:400px;
+       height: 300px;
+       
+       
+   }
+   
+    .football-footer-banner .banner-title h2{
+       
+       font-size: 40px;
+       line-height: 70px;
+     
+    }
+   
+   /*footer-banner end*/
+
+ /*partner start*/
+
+   .partnars{
+    width:960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*partner end*/
+
+}
+
+
+
+
+/*--------------------------------
+this design for laptop device end
+------------------------------------*/
+
+
+
